@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'msite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'corpora',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'blog',
+        'USER': '50sogw',
         'PASSWORD': 'W@671880',
-        'HOST': '',
+        'HOST': '50sogw.mysql.pythonanywhere-services.com',
         'PORT': '',
     }
 }
