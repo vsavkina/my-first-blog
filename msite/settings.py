@@ -90,6 +90,15 @@ DATABASES = {
         'PASSWORD': 'W@671880',
         'HOST': '',
         'PORT': '',
+    },
+    'blog': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '50sogw$blog',
+        'USER': '50sogw',
+        'PASSWORD': 'W@671880',
+        'HOST': '50sogw.mysql.pythonanywhere-services.com',
+        'TEST': {
+          'NAME': '50sogw$test_50sogw$blog' }
     }
 }
 
