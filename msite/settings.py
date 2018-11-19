@@ -81,17 +81,17 @@ WSGI_APPLICATION = 'msite.wsgi.application'
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }"""
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'corpora',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'blog',
+        'USER': '50sogw',
         'PASSWORD': 'W@671880',
-        'HOST': '',
+        'HOST': '50sogw.mysql.pythonanywhere-services.com',
         'PORT': '',
     }
 }
+
 
 
 # Password validation
@@ -132,3 +132,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
