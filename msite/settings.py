@@ -80,26 +80,26 @@ WSGI_APPLICATION = 'msite.wsgi.application'
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}
-{
+}"""
+
+DATABASES = {
+    'default' : {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'corpora',
         'USER': 'postgres',
         'PASSWORD': 'W@671880',
         'HOST': '',
         'PORT': '',
-    },
-    'blog': {"""
-
-DATABASES = {
-    'default': {
+        },
+    'blog': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': '50sogw$blog',
         'USER': '50sogw',
         'PASSWORD': 'W@671880',
         'HOST': '50sogw.mysql.pythonanywhere-services.com',
         'TEST': {
-          'NAME': '50sogw$test_50sogw$blog' } }
+          'NAME': '50sogw$test_blog' } },
+    
 }
 
 
