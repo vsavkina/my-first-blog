@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'msite.wsgi.application'
 }"""
 
 DATABASES = {
-    'blog': {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': '50sogw$default',
         'USER': '50sogw',
