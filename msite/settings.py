@@ -75,35 +75,12 @@ WSGI_APPLICATION = 'msite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'blog',
-        'USER': '50sogw',
-=======
-}
-{
-||||||| merged common ancestors
-}
-{
-=======
-}"""
 
 DATABASES = {
     'default' : {
->>>>>>> 605ffc62727e4ac93c73ca86473afcf3cf0c3c83
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'corpora',
         'USER': 'postgres',
->>>>>>> 1c5f1c966ad025c2aaed52c7ffff73c949b83af3
         'PASSWORD': 'W@671880',
         'HOST': '50sogw.mysql.pythonanywhere-services.com',
         'PORT': '',
@@ -116,8 +93,7 @@ DATABASES = {
         'HOST': '50sogw.mysql.pythonanywhere-services.com',
         'TEST': {
           'NAME': '50sogw$test_blog' } },
-    
-:diffg RE}
+}
 
 
 # Password validation
