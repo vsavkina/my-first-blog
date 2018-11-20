@@ -75,16 +75,22 @@ WSGI_APPLICATION = 'msite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+"""DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}"""
 
 DATABASES = {
-    'default' : {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'corpora',
-        'USER': 'postgres',
+    'blog': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '50sogw$default',
+        'USER': '50sogw',
         'PASSWORD': 'W@671880',
         'HOST': '50sogw.mysql.pythonanywhere-services.com',
-        'PORT': '',
-        },
+        'TEST': {
+          'NAME': '50sogw$test_default' } },
     'blog': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': '50sogw$blog',
@@ -93,6 +99,7 @@ DATABASES = {
         'HOST': '50sogw.mysql.pythonanywhere-services.com',
         'TEST': {
           'NAME': '50sogw$test_blog' } },
+    
 }
 
 
@@ -134,7 +141,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
